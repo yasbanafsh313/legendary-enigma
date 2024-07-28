@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #e9ecef; /* رنگ پس‌زمینه */
+}
+
+.main-content {
+  flex: 1;
+}
+
+.door-info-card {
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 15px; /* حاشیه نرم‌تر */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* سایه عمیق‌تر */
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #ffffff; /* رنگ پس‌زمینه کارت */
+  padding: 20px; /* حاشیه داخلی */
+  position: relative; /* برای تصویر پس‌زمینه */
+}
+
+.door-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+.status {
+  font-weight: bold;
+  color: white; /* رنگ متن سفید */
+  background-color: #007bff; /* رنگ پس‌زمینه آبی */
+  padding: 5px 10px; /* حاشیه داخلی */
+  border-radius: 5px; /* حاشیه نرم */
+}
+
+.card-body {
+  position: relative;
+}
+
+.btn {
+  transition: background-color 0.3s, transform 0.2s; /* انیمیشن دکمه */
+}
+
+.btn:hover {
+  filter: brightness(95%); /* تغییر روشنایی در حالت hover */
+  transform: scale(1.05); /* بزرگ‌تر شدن دکمه در حالت hover */
+}
+
+/* تصویر پس‌زمینه (اختیاری) */
+
+
+.card-header, .card-body {
+  position: relative; /* برای قرار دادن محتوا بالای تصویر */
+  z-index: 1; /* بالای تصویر */
+}
+
